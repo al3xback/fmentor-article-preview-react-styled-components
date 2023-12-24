@@ -1,11 +1,10 @@
 @use 'sass:math';
 @use '../abstracts/variables' as var;
 @use '../abstracts/functions' as func;
-@use '../abstracts/mixins' as mix;
 
 body {
 	position: relative;
-	@include mix.flexbox;
+	display: flex;
 	background-color: var.$color-light-grayish-blue;
 	font-family: var.$font-family-primary;
 	-webkit-font-smoothing: antialiased;
@@ -22,6 +21,6 @@ ol {
 }
 
 #root {
-	@include mix.flexbox;
-	@include mix.flex(auto);
+	display: flex;
+	flex: auto;
 }

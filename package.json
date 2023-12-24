@@ -13,13 +13,22 @@
 		"web-vitals": "^2.1.4"
 	},
 	"devDependencies": {
+		"autoprefixer": "^10.4.16",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^8.4.31",
+		"postcss-cli": "^10.1.0",
 		"prettier": "^2.8.8",
 		"sass": "^1.62.1"
 	},
 	"scripts": {
+		"sass-dev": "sass --watch src/assets/scss/main.scss src/assets/css/main.css",
+		"sass-prod": "sass src/assets/scss/main.scss src/assets/css/main.css --style=compressed --no-source-map",
+		"postcss": "postcss src/assets/css/main.css -o src/assets/css/main.css --use autoprefixer --no-map",
+		"prettier": "prettier --write .",
+		"dev": "run-s sass-dev",
+		"lint": "run-s prettier",
+		"build-css": "run-s lint sass-prod postcss",
 		"start": "react-scripts start",
-		"start-sass": "sass --watch src/assets/scss/main.scss src/assets/css/main.css",
-		"start-lint": "prettier --write .",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
