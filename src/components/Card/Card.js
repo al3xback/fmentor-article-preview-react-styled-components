@@ -8,10 +8,10 @@ const CardShell = styled.article`
 	flex-direction: column;
 	width: 100%;
 	max-width: 24.6153846154em;
-	margin: 3.0769230769em 0 4.6153846154em;
 	background-color: hsl(0, 0%, 100%);
+	margin: 3.0769230769em 0 4.6153846154em;
 	border-radius: 8px;
-	box-shadow: 0 1.2307692308em 2.3076923077em rgba(0, 0, 0, 0.04);
+	box-shadow: 0 16px 30px rgba(0, 0, 0, 0.04);
 
 	& .card__image,
 	& .card__content {
@@ -84,8 +84,8 @@ const CardShell = styled.article`
 
 	& .card__share {
 		position: absolute;
-		bottom: 0;
 		left: 0;
+		bottom: 0;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -116,8 +116,8 @@ const CardShell = styled.article`
 	& .card__share-action {
 		position: absolute;
 		top: 0;
-		bottom: 0;
 		left: 0;
+		bottom: 0;
 		right: 0;
 		gap: 1.5384615385em;
 		padding: inherit;
@@ -184,20 +184,20 @@ const CardShell = styled.article`
 
 		& .card__share-action {
 			top: auto;
-			bottom: 6.1538461538em;
 			left: auto;
+			bottom: 6.1538461538em;
 			right: -5.2307692308em;
 			padding: 1.2307692308em 2.4615384615em;
 			background-color: hsl(217, 19%, 35%);
 			border-radius: 10px;
-			box-shadow: 0 0.6153846154em 1.2307692308em rgba(0, 0, 0, 0.16);
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
 		}
 
 		& .card__share-action::before {
 			content: '';
 			position: absolute;
-			bottom: -0.5769230769em;
 			left: 50%;
+			bottom: -0.5769230769em;
 			width: 1.1538461538em;
 			height: 1.1538461538em;
 			background-color: inherit;
