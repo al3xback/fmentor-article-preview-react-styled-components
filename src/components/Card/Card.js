@@ -215,7 +215,7 @@ const Card = () => {
 		<CardShell>
 			<div className="card__image">
 				<div className="card__image-inner">
-					<img src={drawersImage} alt="" />
+					<img width="280" height="278" src={drawersImage} alt="" />
 				</div>
 			</div>
 			<div className="card__content">
