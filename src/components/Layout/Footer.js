@@ -6,8 +6,8 @@ const FooterShell = styled.footer`
 	bottom: 0;
 	width: 100%;
 	padding: 1em 0;
+	font-size: 0.9em;
 	text-align: center;
-	font-size: 0.8em;
 
 	&,
 	& .container {
