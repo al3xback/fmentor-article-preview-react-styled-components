@@ -9,7 +9,7 @@ const CardShell = styled.article`
 	width: 100%;
 	max-width: 24.6153846154em;
 	background-color: hsl(0, 0%, 100%);
-	margin: 3.0769230769em 0 4.6153846154em;
+	margin: 2.3076923em 0 4.6153846154em;
 	border-radius: 8px;
 	box-shadow: 0 16px 30px rgba(0, 0, 0, 0.04);
 
@@ -215,7 +215,12 @@ const Card = () => {
 		<CardShell>
 			<div className="card__image">
 				<div className="card__image-inner">
-					<img width="280" height="278" src={drawersImage} alt="Drawers" />
+					<img
+						width="280"
+						height="278"
+						src={drawersImage}
+						alt="Drawers"
+					/>
 				</div>
 			</div>
 			<div className="card__content">
