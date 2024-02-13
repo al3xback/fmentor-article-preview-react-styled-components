@@ -154,7 +154,7 @@ const CardShell = styled.article`
 		color: hsl(0, 0%, 100%);
 	}
 
-	@media (min-width: 60em) {
+	@media (min-width: 56em) {
 		& {
 			flex-direction: row;
 			max-width: 55.3846153846em;
